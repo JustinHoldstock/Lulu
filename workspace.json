@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "engine": "libs/engine"
+    "engine": "libs/engine",
+    "sandbox": "apps/sandbox",
+    "sandbox-e2e": "apps/sandbox-e2e"
   }
 }

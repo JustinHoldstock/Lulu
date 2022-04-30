@@ -1,0 +1,67 @@
+{
+  "projectType": "application",
+  "root": "apps/sandbox",
+  "sourceRoot": "apps/sandbox/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/sandbox",
+        "compiler": "babel",
+        "index": "apps/sandbox/src/index.html",
+        "baseHref": "/",
+        "main": "apps/sandbox/src/main.ts",
+        "polyfills": "apps/sandbox/src/polyfills.ts",
+        "tsConfig": "apps/sandbox/tsconfig.app.json",
+        "assets": ["apps/sandbox/src/favicon.ico", "apps/sandbox/src/assets"],
+        "styles": ["apps/sandbox/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/sandbox/src/environments/environment.ts",
+              "with": "apps/sandbox/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "sandbox:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "sandbox:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/sandbox/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/sandbox"],
+      "options": {
+        "jestConfig": "apps/sandbox/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
