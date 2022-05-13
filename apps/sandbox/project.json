@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/sandbox",
@@ -16,8 +18,14 @@
         "main": "apps/sandbox/src/main.ts",
         "polyfills": "apps/sandbox/src/polyfills.ts",
         "tsConfig": "apps/sandbox/tsconfig.app.json",
-        "assets": ["apps/sandbox/src/favicon.ico", "apps/sandbox/src/assets"],
-        "styles": ["apps/sandbox/src/styles.scss"],
+        "assets": [
+          "apps/sandbox/src/favicon.ico",
+          "apps/sandbox/src/assets",
+          "apps/sandbox/src/assets/Red/Rend.png"
+        ],
+        "styles": [
+          "apps/sandbox/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -50,14 +58,20 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/sandbox/**/*.ts"]
+        "lintFilePatterns": [
+          "apps/sandbox/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/sandbox"],
+      "outputs": [
+        "coverage/apps/sandbox"
+      ],
       "options": {
         "jestConfig": "apps/sandbox/jest.config.ts",
         "passWithNoTests": true
