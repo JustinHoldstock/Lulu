@@ -1,0 +1,102 @@
+{"frames": [
+
+{
+	"filename": "idle_red_1.png",
+	"frame": {"x":44,"y":1,"w":18,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":18,"h":35},
+	"sourceSize": {"w":32,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "idle_red_2.png",
+	"frame": {"x":1,"y":38,"w":19,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":19,"h":35},
+	"sourceSize": {"w":32,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "idle_red_3.png",
+	"frame": {"x":22,"y":38,"w":19,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":13,"w":19,"h":35},
+	"sourceSize": {"w":32,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "idle_red_4.png",
+	"frame": {"x":23,"y":1,"w":19,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":13,"w":19,"h":35},
+	"sourceSize": {"w":32,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_1.png",
+	"frame": {"x":84,"y":1,"w":17,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":13,"w":17,"h":35},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_2.png",
+	"frame": {"x":81,"y":57,"w":16,"h":35},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":13,"w":16,"h":35},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_3.png",
+	"frame": {"x":43,"y":38,"w":18,"h":36},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":12,"w":18,"h":36},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_4.png",
+	"frame": {"x":1,"y":1,"w":20,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":13,"w":20,"h":35},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_5.png",
+	"frame": {"x":64,"y":1,"w":18,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":13,"w":18,"h":35},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "walk_red_6.png",
+	"frame": {"x":81,"y":38,"w":17,"h":36},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":12,"w":17,"h":36},
+	"sourceSize": {"w":34,"h":48},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Red.png",
+	"format": "RGBA8888",
+	"size": {"w":118,"h":74},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8f93dada0f2b563c7c6ba521e3b653a0:b99d5ebdb9873e08fcb23be7a8a7eb92:f59ece1fd8da7f8839c914a566bc6827$"
+}
+}

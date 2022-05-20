@@ -20,13 +20,13 @@
         "tsConfig": "apps/sandbox/tsconfig.app.json",
         "assets": [
           "apps/sandbox/src/favicon.ico",
-          "apps/sandbox/src/assets",
-          "apps/sandbox/src/assets/Red/Rend.png"
+          "apps/sandbox/src/assets"
         ],
         "styles": [
           "apps/sandbox/src/styles.scss"
         ],
-        "scripts": []
+        "scripts": [],
+        "webpackConfig": "apps/sandbox/custom-webpack.config.ts"
       },
       "configurations": {
         "production": {
