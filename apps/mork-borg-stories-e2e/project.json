@@ -1,0 +1,28 @@
+{
+  "root": "apps/mork-borg-stories-e2e",
+  "sourceRoot": "apps/mork-borg-stories-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/mork-borg-stories-e2e/cypress.json",
+        "devServerTarget": "mork-borg-stories:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "mork-borg-stories:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mork-borg-stories-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["mork-borg-stories"]
+}

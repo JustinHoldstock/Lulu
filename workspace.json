@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "engine": "libs/engine",
+    "mork-borg-stories": "apps/mork-borg-stories",
+    "mork-borg-stories-e2e": "apps/mork-borg-stories-e2e",
     "sandbox": "apps/sandbox",
     "sandbox-e2e": "apps/sandbox-e2e"
   }
