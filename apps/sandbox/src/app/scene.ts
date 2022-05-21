@@ -1,4 +1,4 @@
-import './index.css';
+// import './index.css';
 import {
   Lulu,
   SpriteComponent,
@@ -12,8 +12,8 @@ import { PlayerMover } from './scripts/player-mover';
 // Assets
 import IdleRedSrc from '../assets/Red/Red.png';
 import * as IdleRedJson from '../assets/Red/Red.json';
-import BackgroundSrc from '/assets/background/background_grass.png';
-import SpaceshipSrc from '/assets/spaceship/shipYellow_manned.png';
+import BackgroundSrc from '../assets/background/background_grass.png';
+import SpaceshipSrc from '../assets/spaceship/shipYellow_manned.png';
 
 // create canvas
 const canvas: HTMLCanvasElement = document.createElement('canvas');
