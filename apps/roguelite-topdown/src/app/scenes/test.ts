@@ -10,6 +10,7 @@ import {
 
 import IdleRedSrc from '../../assets/Red/Red.png';
 import * as IdleRedJson from '../../assets/Red/Red.json';
+import { PlayerMover } from '../components/player-mover';
 
 const canvas: HTMLCanvasElement = document.createElement('canvas');
 document.body.append(canvas);
@@ -40,6 +41,11 @@ player.addComponent(sprite);
 scene.addChild(player);
 sprite.enabled = true;
 
+const mover = new PlayerMover(player);
+player.addComponent(mover);
+mover.enabled = true;
+
+
 // const background = new Entity('bg');
 // const transformBg = new TransformComponent();
 // transformBg.setScale(1.5, 1.5);
@@ -50,7 +56,3 @@ sprite.enabled = true;
 // background.addComponent(spriteBg);
 // scene.addChild(background);
 // spriteBg.enabled = true;
-
-// const mover = new PlayerMover(player);
-// player.addComponent(mover);
-// mover.enabled = true;
