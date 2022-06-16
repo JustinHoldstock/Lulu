@@ -4,6 +4,8 @@
     "engine": "libs/engine",
     "mork-borg-stories": "apps/mork-borg-stories",
     "mork-borg-stories-e2e": "apps/mork-borg-stories-e2e",
+    "roguelite-topdown": "apps/roguelite-topdown",
+    "roguelite-topdown-e2e": "apps/roguelite-topdown-e2e",
     "sandbox": "apps/sandbox",
     "sandbox-e2e": "apps/sandbox-e2e"
   }

@@ -1,0 +1,28 @@
+{
+  "root": "apps/roguelite-topdown-e2e",
+  "sourceRoot": "apps/roguelite-topdown-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/roguelite-topdown-e2e/cypress.json",
+        "devServerTarget": "roguelite-topdown:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "roguelite-topdown:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/roguelite-topdown-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["roguelite-topdown"]
+}

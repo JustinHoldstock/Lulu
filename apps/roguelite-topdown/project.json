@@ -1,0 +1,81 @@
+{
+  "projectType": "application",
+  "root": "apps/roguelite-topdown",
+  "sourceRoot": "apps/roguelite-topdown/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/roguelite-topdown",
+        "compiler": "babel",
+        "index": "apps/roguelite-topdown/src/index.html",
+        "baseHref": "/",
+        "main": "apps/roguelite-topdown/src/main.ts",
+        "polyfills": "apps/roguelite-topdown/src/polyfills.ts",
+        "tsConfig": "apps/roguelite-topdown/tsconfig.app.json",
+        "assets": [
+          "apps/roguelite-topdown/src/favicon.ico",
+          "apps/roguelite-topdown/src/assets"
+        ],
+        "styles": [
+          "apps/roguelite-topdown/src/styles.scss"
+        ],
+        "scripts": [],
+        "webpackConfig": "apps/roguelite-topdown/custom-webpack.config.ts"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/roguelite-topdown/src/environments/environment.ts",
+              "with": "apps/roguelite-topdown/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "roguelite-topdown:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "roguelite-topdown:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/roguelite-topdown/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/roguelite-topdown"
+      ],
+      "options": {
+        "jestConfig": "apps/roguelite-topdown/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
